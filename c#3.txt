@@ -1,0 +1,59 @@
+nome;
+
+int idade;
+
+float salario;
+
+char sexo; //f ou m
+
+char estado;// s,c,v ou d
+
+//lendo
+
+getline(cin , nome);
+
+if(nome.size()>3){
+
+cin>> idade;
+
+if(idade>0 && idade < 150){
+
+cin>>salario;
+
+}else{
+
+cout<<"idade invalida";
+
+}
+
+if(salario>0){
+
+cin>>sexo;
+
+}else{
+
+cout<<"salario invalido";
+
+}
+
+if(sexo=='f' || sexo=='m'){
+
+cin>> estado;
+
+}else{
+
+cout<<"sexo invalido";
+
+}
+
+if(estado!='s' || estado!='c' || estado!='v' || estado!='d'){
+
+cout<<"estado civil invalido";
+
+}
+
+}else{
+
+cout<<"nome de tamanho invalido";
+
+}
